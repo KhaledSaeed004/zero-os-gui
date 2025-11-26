@@ -1,9 +1,10 @@
-import Navbar from "@components/Navbar.jsx";
+import { Navbar, Desktop } from "@components";
 
 const App = () => {
     return (
         <main>
             <Navbar />
+            <Desktop />
         </main>
     )
 }
