@@ -65,7 +65,7 @@ const Desktop = () => {
 
     return (
         <section id='desktop'>
-            <p ref={subtitleRef} className=''>{renderText('Welcome, Zumie', 'text-6xl text-shadow-orange-800 text-shadow-lg/30 font-georama text-orange-600', 400)}</p>
+            <p ref={subtitleRef} className=''>{renderText('Welcome, Zumie', 'text-6xl text-shadow-gray-500 text-shadow-lg/20 font-georama text-[#eaeaea]', 400)}</p>
 
             <div className='small-screen'>
                 <p>This experience was designed for desktop/tablet screens only.</p>
