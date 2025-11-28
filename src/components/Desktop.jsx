@@ -49,7 +49,7 @@ const setupTextHover = (container, type) => {
     }
 }
 
-const Desktop = () => {
+const Desktop = ({ref}) => {
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
 
@@ -64,8 +64,8 @@ const Desktop = () => {
     }, [])
 
     return (
-        <section id='desktop'>
-            <p ref={subtitleRef} className=''>{renderText('Welcome, Zumie', 'text-6xl text-shadow-gray-500 text-shadow-lg/20 font-georama text-[#eaeaea]', 400)}</p>
+        <section id='desktop' ref={ref}>
+            <p ref={subtitleRef} className=''>{renderText('Welcome, <User>', 'text-6xl text-shadow-gray-500 text-shadow-lg/20 font-georama text-[#eaeaea]', 400)}</p>
 
             <div className='small-screen'>
                 <p>This experience was designed for desktop/tablet screens only.</p>

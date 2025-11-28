@@ -7,10 +7,26 @@ body {
     width: 100dvw;
     overflow: hidden;
     height: 100dvh;
+    cursor: url("/cursor/default.svg"), default;
     background-image: url("/images/wallpaper01.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+a,
+button,
+[role="button"],
+.cursor-pointer,
+summary {
+    cursor: url("/cursor/pointer.svg"), pointer;
+}
+
+input,
+textarea,
+[contenteditable="true"],
+.cursor-text {
+    cursor: url("/cursor/text.svg"), text;
 }
 
 @theme {
